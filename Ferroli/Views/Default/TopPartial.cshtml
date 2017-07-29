@@ -1,0 +1,77 @@
+﻿@model Ferroli.Models.tblConfig
+@Html.Raw(ViewBag.h1)
+<div id="Top">
+    <div id="Content">
+        <div id="Banner">
+            <div id="LeftBanner">
+                <a href="/" title="Bình nóng lạnh Ferroli"><img src="@Model.Logo" alt="Logo Ferroli" /></a>
+            </div>
+            <div id="RightBanner">
+                <div id="Left">
+                    <div id="Box">
+                       @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
+                        {
+                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">Chưa đến giờ làm việc</span>
+
+                        }
+                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
+                        {
+
+                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">@Model.HotlineIN</span>                        }
+
+
+                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
+                        {
+                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">@Model.HotlineOUT</span>
+                        }
+                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
+                        {
+                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">Hết giờ làm việc</span>
+                        } 
+                 </div>
+                    </div>
+                <div id="Right">
+                    <div id="Right_Top">
+                        <a href="http://binhnonglanhferroli.vn" title="Binh nong lanh ferroli" rel="nofollow">Trang chủ</a> | <a href="/11/gioi-thieu.aspx" title="Gioi thieu" rel="nofollow">Giới thiệu</a> |<a href="/ListNew/binh-nong-lanh-ferroli-5.aspx" title="Gioi thieu" rel="nofollow">Tin tức</a> | <a href="/Contact" title="Lien he" rel="nofollow">Liên hệ</a>
+                    </div>
+                    <div id="Right_Bottom">
+                        @using (Html.BeginForm("Search", "Default", FormMethod.Post))
+                        {
+                            <input type="text" name="txtSearch" id="txtSearch" class="txtSearch" />
+                            <button type="submit" name="btnSearch" id="btnSearch" class="btnSearch"></button>
+                        }
+                    </div>
+                    <div class="Clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="Clear"></div>
+        <div class="dropdown">
+            @*<select name="one" class="dropdown-select">
+                    <option value="">-- Chọn danh mục sản phẩm --</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                </select>*@
+            @Html.DropDownList("one", "-- Chọn danh mục sản phẩm --")
+        </div>
+
+        <div id="Menu">
+            <ul class="ul1">
+                <li class="li1">
+                    <a href="/" title="Bình nóng lạnh Ferroli">Ferroli</a>
+
+                </li>
+
+
+                @Html.Raw(ViewBag.Menu)
+
+                <li class="li1">
+                    <a href="/Contact" title="Liên hệ" rel="nofollow">Hỗ trơ khách hàng</a>
+                </li>
+            </ul>
+        </div>
+        <div class="Clear"></div>
+    </div>
+</div>
+ 

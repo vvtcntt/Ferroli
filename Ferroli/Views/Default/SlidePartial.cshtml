@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Ferroli.Models.tblImage>
+
+<div class="Clear"></div>
+<div id="Slide">
+    <div id="Content_slide">
+        <div id="slideshow">
+            <div class="container">
+                <div class="c_slider" style="background: @Html.Raw(ViewBag.url)"></div>
+                <div class="slider">
+                    @foreach (var item in Model)
+                    {
+                        <figure>
+                            <img src="@item.Images" alt="@item.Name" title="@item.Name" width="1200" height="317" />
+                        </figure>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Clear"></div>

@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 768px) {
+	#Top #Content{ width:100%}
+		#Top #Content #Banner{ width:100%; height:85px}
+	#Top #Content #Banner #LeftBanner{ width:auto; height:100%}
+	#Top #Content #Banner #RightBanner{ float:right}
+        #Top #Content #Menu ul li a {
+            font-size: 12px;
+            padding: 2px 12px !important;
+        }
+		#slideshow{ width:100% !important}
+#slideshow .container{ width:100% !important}
+#Content_slide{ width:100%; height:317px; margin:0px auto; position:relative}
+		 
+
+
+
+
+{ width:100%}
+		 #Contents #LeftContent{ display:none}
+		 #MainContent #RightContent{ width:auto !important; float:right; margin:opx; padding:0px}
+		 .nVar{ width:auto }
+		  #MainContent #RightContent .Product{ width:auto ; margin:opx; padding:0px}
+		   #MainContent #RightContent .Product .Content{ width:auto }
+		   #MainContent #RightContent .Product .Content .Tear_1{ width:32.1%}
+		   #Footer #Top #Content{ width:100%}
+		   #Footer #Top .Tear_4{ width:165px}
+		   #Footer #Top .Tear_2{ float:left; margin-left:15px}
+		   #Footer #Bottom #Content{ width:auto}
+           #Top #Content #Menu ul li.li1 .ul2{ width:auto !important}
+             #ProductDetail #Func .Content_Func table tr { border:none}
+            #ProductDetail #Func .Content_Func table tr td{ width:99% !important; height:auto; float:left; border:none}
+              #ProductDetail #Func .Content_Func table tr td img{ margin:2px auto !important ; display:block}
+#Footer #Top #Contents_Top{ width:100%}}
+@media screen and (max-width: 655px) {
+		#Top #Content #Banner #RightBanner{ height:85px ; width:100%}
+		#Top #Content #Banner{ height:auto}
+ 		 #Top #Content #Banner #LeftBanner{ width:100%; height:100%}
+	#Top #Content #Banner #LeftBanner a{ display:table-cell; vertical-align:middle; text-align:center}
+	#Top #Content #Banner #RightBanner #Left{ height:auto !important}
+	#Top #Content #Banner #RightBanner #Right{ height:auto !important}
+	.share{ display:none}
+	#Footer #Top .Tear_4{ width:200px}
+    #Comments .Content_Comment{ overflow:hidden; width:98%}
+	}
+@media screen and (max-width: 488px) {
+	body { width:100%; padding:0; margin:0}
+	#Top{ width:100%; margin:0px auto; padding:0 }
+	#Top #Content{ width:100%; height:auto; margin:0px; padding:0px !important}
+	#Top #Content #Banner{ height:auto !important}
+	#Top #Content #Banner{ width:100%; height:auto}
+	#Top #Content #Banner #LeftBanner{ width:100%; height:100%}
+	#Top #Content #Banner #LeftBanner a{ display:table-cell; vertical-align:middle; text-align:center}
+	#Top #Content #Banner #RightBanner{ width:100%; height:auto}
+	#Top #Content #Banner #RightBanner #Left{ width:100%; height:30px}
+ 	#Top #Content #Banner #RightBanner #Left #Box{ margin:0px; text-align:center}
+	#Top #Content #Banner #RightBanner #Left #Box .iCon_Hotline{ display:none}
+	#Top #Content #Banner #RightBanner #Right{ width:100%; height:auto; text-align:center}
+	#Top #Content #Banner #RightBanner #Right #Right_Top{ text-align:center}
+	#Top #Content #Banner #RightBanner #Right #Right_Bottom{ float:none; margin:0px auto 5px auto}
+	#Top #Content #Menu{ display:none}
+	#Top #Content #Menu ul li{ float:none ; text-align:center !important; width:100%}
+	#Top #Content #Menu ul li a{ text-align:center; font-size:12px; padding:0px 1px !important; text-transform:none !important}
+	#Top #Content #Menu ul li.li1:hover .ul2{display:none}
+	#Slide{ display:none}
+		#Top #Content #Menu ul li a:last-child{margin-bottom:5px; display:block}
+		#MainContent{ width:100%}
+		.Root{margin-bottom: 5px}
+		.Root .Left a{ line-height:15px}
+		.share{ display:none}
+			 #Contents #LeftContent{ display:none}
+			  
+		#MainContent #RightContent .Product  .nVar .Right .Arrange{ display:none}
+		#MainContent #RightContent .Product .Content .Tear_1{ width:48%; height:auto !auto}
+		#MainContent #RightContent .Product .Content .Tear_1 .img{ height:120px}
+		  #Footer #Top .Tear_2{ width:100%; margin-left:0px; padding:0px}
+		   #Footer #Top .Tear_4{ display:none}
+		   #Footer #Top .Tear_2 h4{ text-align:center}
+		     #Footer #Top .Tear_3 h4{ text-align:center}
+		   #Footer #Top .Tear_3{ width:100%; margin:0px !important; padding:0px; overflow:hidden; display:none}
+		    #Footer #Bottom #Content{ width:100%; padding:0px; margin:0px}
+		   #Footer #Bottom #Content #Right{ display:none}
+		   #Top #Content #Banner #RightBanner #Left{ display:none}
+		    .dropdown{ float:none; margin:10px auto; display:block ; border:none; }
+			#Footer #Top .Tear_4 a{ color:#999999; font-size:12px; margin:5px 3px; display:block}
+            #ProductDetail #Func .Content_Func table tr { border:none}
+            #ProductDetail #Func .Content_Func table tr td{ width:99% !important; height:auto; float:left; border:none}
+                #ProductDetail #Func .Content_Func table tr td h3 {
+                    font-size: 16px !important;
+                }
+                              #ProductDetail #Func .Content_Func table tr td img{ margin:2px auto !important ; display:block}
+
+}
+@media screen and (max-width: 250px) {
+
+    .dropdown{ float:none; margin:10px auto; display:block ; border:none; width:auto }
+    #MainContent #RightContent .Product .Content .Tear_1{ width:100%; margin:0px; padding:0px}
+    #Top #Content #Banner #RightBanner #Right #Right_Bottom{ display:none}
+    #MainContent #RightContent .Product .nVar .Left h1{ font-size:11px !important;}
+
+}

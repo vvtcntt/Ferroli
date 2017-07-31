@@ -400,8 +400,14 @@ namespace Ferroli.Controllers.Admin.Product
                 {
                     chuoicap += "<label class=\"lb1\"><input type=\"radio\" name=\"Capacity\" value=\"" + item.id + "\"/> " + item.Name + "</label>";
                 }
-                ViewBag.chuoicap = chuoicap;
-                    return View();
+                ViewBag.chuoicap = chuoicap; var listaddress = db.tblAddresses.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
+                var lstAddress = new List<SelectListItem>();
+                foreach (var item in listaddress)
+                {
+                    lstAddress.Add(new SelectListItem { Text = item.Name, Value = item.id.ToString() });
+                }
+                ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", 0);
+                return View();
             }
             else
             {
@@ -432,6 +438,11 @@ namespace Ferroli.Controllers.Admin.Product
                 string capacity = Collection["Capacity"];
                 if (capacity != null && capacity != "")
                     tblproduct.Capacity = int.Parse(capacity);
+                string idAddress = Collection["drAddress"];
+                if (idAddress != null && idAddress != "")
+                {
+                    tblproduct.Address = int.Parse(idAddress);
+                }
                 string[] listarray = tblproduct.ImageLinkDetail.Split('/');
                 string ImageLinkDetail = Collection["ImageLinkDetail"];
                 string imagethum = listarray[listarray.Length - 1];
@@ -724,7 +735,20 @@ namespace Ferroli.Controllers.Admin.Product
                     else
                         chuoicap += "<label class=\"lb1\"><input type=\"radio\" name=\"rdcap\" value=\"" + item.id + "\"/> " + item.Name + "</label>";
                 }
-                ViewBag.chuoicap = chuoicap;
+                ViewBag.chuoicap = chuoicap; string idaddress = tblproduct.Address.ToString();
+                var listaddress = db.tblAddresses.Where(p => p.Active == true).OrderBy(p => p.Ord).ToList();
+                var lstAddress = new List<SelectListItem>();
+                foreach (var item in listaddress)
+                {
+                    lstAddress.Add(new SelectListItem { Text = item.Name, Value = item.id.ToString() });
+                }
+                if (idaddress != null && idaddress != "")
+                {
+                    ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", int.Parse(idaddress));
+
+                }
+                else
+                    ViewBag.drAddress = new SelectList(lstAddress, "Value", "Text", 0);
                 return View(tblproduct);
             }
             else
@@ -824,6 +848,15 @@ namespace Ferroli.Controllers.Admin.Product
                     tblproduct.ViewHomes = ViewHomes;
                     tblproduct.Title = Title;
                     tblproduct.Keyword = Keyword;
+                    string idAddress = collection["drAddress"];
+                    if (idAddress != null && idAddress != "")
+                    {
+                        tblproduct.Address = int.Parse(idAddress);
+                    }
+                    else
+                    {
+                        tblproduct.Address = 0;
+                    }
                     string urls = db.tblGroupProducts.Find(idCate).Tag;
                     if (URL == true)
                     {

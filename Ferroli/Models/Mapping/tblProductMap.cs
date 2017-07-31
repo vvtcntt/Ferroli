@@ -29,9 +29,6 @@ namespace Ferroli.Models.Mapping
             this.Property(t => t.Warranty)
                 .HasMaxLength(50);
 
-            this.Property(t => t.Address)
-                .HasMaxLength(50);
-
             this.Property(t => t.Access)
                 .HasMaxLength(500);
 

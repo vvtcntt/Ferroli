@@ -33,14 +33,14 @@ src:url(../Font/MyriadPro-Semibold.ttf);
 #Top{ width:100%; height:auto; float:left; margin:0px; padding:0px; background:url(../iCon/line.gif) repeat-x bottom center scroll #fafafa; }
 #Top #Content{ width:1200px; height:auto;  margin:0px auto}
 #Top #Content #Banner{ width:100%; height:85px; float:left; margin:0px}
-#Top #Content #Banner #LeftBanner{ width:710px; height:100%; float:left; margin:0px; display:table}
+#Top #Content #Banner #LeftBanner{ width:30%; height:100%; float:left; margin:0px; display:table}
 #Top #Content #Banner #LeftBanner a{ display:table-cell; vertical-align:middle}
 #Top #Content #Banner #LeftBanner img{ max-height:68px; width:auto; margin:auto 5px}
-#Top #Content #Banner #RightBanner{ width:490px; height:100%; float:left; margin:0px}
+#Top #Content #Banner #RightBanner{ width:70%; height:100%; float:left; margin:0px}
 #Top #Content #Banner #RightBanner #Left{ width:50%; height:100%; float:left; margin:0px }
 #Top #Content #Banner #RightBanner #Left #Box{ width:100%; height:30px; float:left; margin:40px 0px; color:#707070; font-size:12px }
 #Top #Content #Banner #RightBanner #Left #Box .iCon_Hotline{ width:21px; height:20px; background:url(../iCon/icon_Hotline.gif) no-repeat transparent; float:left; margin-right:10px}
-#Top #Content #Banner #RightBanner #Left #Box span.Hotline{ font-size:16px; color:#fa8e00}
+#Top #Content #Banner #RightBanner #Left #Box span.Hotline{ font-size:20px; color:#fa8e00}
 #Top #Content #Banner #RightBanner #Right{ width:50%; height:100%; float:left; margin:0px }
 #Top #Content #Banner #RightBanner #Right #Right_Top{ height:20px; margin:3px 0px 0px 0px; width:100%;color:#707070; text-align:right}
 #Top #Content #Banner #RightBanner #Right #Right_Top a{ color:#707070; margin:2px 2px; font-size:12px}
@@ -120,17 +120,17 @@ background-position: 0px -488px;
 height: 49px;
 line-height: 49px;
 }
- #Box_Hotline{ width:100%; height:50px; float:left; margin:5px 0px;border: 1px solid #F2E7D2;}
- #Box_Hotline a{
+.Box_Hotline{ width:100%; height:50px; float:left; margin:5px 0px;border: 1px solid #F2E7D2;}
+.Box_Hotline a{
 	height: 49px;
-	line-height: 49px;;
+	line-height: 49px;
 	color: #393939;
 	display: block;
 	background-color: #FEF3DF;
 	padding-left: 58px; 
 	background:url(../iCon/icon.png) no-repeat scroll 0px -535px #fef3df
 }
-  #Box_Hotline a span{ font-size:16px; font-weight:bold; color:#fa8e00}
+.Box_Hotline a span{ font-size:16px; font-weight:bold; color:#fa8e00}
 #Contents #LeftContent #Support { width:100%; height:auto; float:left; margin:5px 0px; background:#fef3df;border: 1px solid #F2E7D2;}
 #Contents #LeftContent #Support #Top_Support{ width:100%; height:40px; background:url(../iCon/icon.png) no-repeat scroll 0px -582px; float:left}
 #Contents #LeftContent #Support #Top_Support span{ line-height:40px; margin:auto 5px auto 58px; color:#393939}

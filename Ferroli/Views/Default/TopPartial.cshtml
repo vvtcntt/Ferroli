@@ -9,25 +9,13 @@
             <div id="RightBanner">
                 <div id="Left">
                     <div id="Box">
-                       @if (int.Parse(DateTime.Now.Hour.ToString()) > 0 && int.Parse(DateTime.Now.Hour.ToString()) < 7)
-                        {
-                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">Chưa đến giờ làm việc</span>
+                        
+                            <span class="iCon_Hotline"></span>
+                        <span>Hỗ trợ : </span>
+                        <span class="Hotline">@Model.HotlineIN - @Model.HotlineOUT</span>                        
+                         
 
-                        }
-                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 7 && int.Parse(DateTime.Now.Hour.ToString()) < 19)
-                        {
-
-                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">@Model.HotlineIN</span>                        }
-
-
-                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 19 && int.Parse(DateTime.Now.Hour.ToString()) < 22)
-                        {
-                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">@Model.HotlineOUT</span>
-                        }
-                        else if (int.Parse(DateTime.Now.Hour.ToString()) >= 22 && int.Parse(DateTime.Now.Hour.ToString()) < 25)
-                        {
-                            <span class="iCon_Hotline"></span><span>Hỗ trợ khách hàng : </span><span class="Hotline">Hết giờ làm việc</span>
-                        } 
+ 
                  </div>
                     </div>
                 <div id="Right">

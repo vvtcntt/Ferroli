@@ -164,7 +164,7 @@ namespace Ferroli.Controllers.Display
             return Mangphantu;
         }
         List<SelectListItem> carlist = new List<SelectListItem>();
-        public PartialViewResult TopPartial(int id=1)
+        public PartialViewResult TopPartial()
         {
             tblConfig config = db.tblConfigs.First();
             var Menu=db.tblGroupProducts.Where(p=>p.ParentID==null&& p.Active==true).OrderBy(p=>p.Ord).ToList();

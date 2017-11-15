@@ -38,7 +38,7 @@ src:url(../Font/MyriadPro-Semibold.ttf);
 #Top #Content #Banner #LeftBanner img{ max-height:68px; width:auto; margin:auto 5px}
 #Top #Content #Banner #RightBanner{ width:70%; height:100%; float:left; margin:0px}
 #Top #Content #Banner #RightBanner #Left{ width:50%; height:100%; float:left; margin:0px }
-#Top #Content #Banner #RightBanner #Left #Box{ width:100%; height:30px; float:left; margin:40px 0px; color:#707070; font-size:12px }
+#Top #Content #Banner #RightBanner #Left #Box{ width:100%; height:auto; float:left; margin:20px 0px; color:#707070; font-size:12px }
 #Top #Content #Banner #RightBanner #Left #Box .iCon_Hotline{ width:21px; height:20px; background:url(../iCon/icon_Hotline.gif) no-repeat transparent; float:left; margin-right:10px}
 #Top #Content #Banner #RightBanner #Left #Box span.Hotline{ font-size:20px; color:#fa8e00}
 #Top #Content #Banner #RightBanner #Right{ width:50%; height:100%; float:left; margin:0px }

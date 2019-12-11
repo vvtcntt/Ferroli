@@ -19,6 +19,8 @@ namespace Ferroli
             routes.MapRoute("Chi_Tiet", "Product/{Tag}-{id1}-{id}.aspx", new { controller = "Products", action = "ProductDetail", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ProductDetail$" });
             routes.MapRoute("Danh_Sach", "ListProduct/{Tag}-{id}.aspx", new { controller = "Products", action = "ListProduct", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ListProduct$" });
             routes.MapRoute("ListCap", "{Tag}.html", new { controller = "Products", action = "ListCapacity", tag = UrlParameter.Optional }, new { controller = "^P.*", action = "^ListCapacity$" });
+            routes.MapRoute(name: "KM", url: "Chuong-trinh-khuyen-mai", defaults: new { controller = "Products", action = "detail" });
+
             routes.MapRoute(name: "Tin-tuc", url: "Tin-tuc", defaults: new { controller = "NewDisplay", action = "ListNew" });
             routes.MapRoute(name: "Nha-phan-phoi", url: "Nha-phan-phoi", defaults: new { controller = "MenufacturersDisplay", action = "MenufacturerList" });
             routes.MapRoute(name: "Contact", url: "Contact", defaults: new { controller = "Contacts", action = "Index" });
